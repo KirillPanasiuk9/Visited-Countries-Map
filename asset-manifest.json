@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Visited-Countries-Map/static/css/main.000dac1c.css",
+    "main.js": "/Visited-Countries-Map/static/js/main.228262ad.js",
+    "index.html": "/Visited-Countries-Map/index.html",
+    "main.000dac1c.css.map": "/Visited-Countries-Map/static/css/main.000dac1c.css.map",
+    "main.228262ad.js.map": "/Visited-Countries-Map/static/js/main.228262ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.000dac1c.css",
+    "static/js/main.228262ad.js"
+  ]
+}
