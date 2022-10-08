@@ -3,4 +3,13 @@
     z-index: 1000;
 }
 
+svg {
+    background-color: royalblue;
+    margin-bottom: 0;
+}
+
+svg path {
+    transition: 0.5s;
+}
+
 

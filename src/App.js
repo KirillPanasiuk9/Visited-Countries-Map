@@ -1,5 +1,6 @@
 import './App.css';
 import {useState} from "react";
+import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
 
@@ -12,12 +13,12 @@ function App() {
         if(event.target.className.baseVal !== 'map') {
 
             const countryName = event.target.className.baseVal;
+            const country = document.getElementsByClassName(`${countryName}`)
+            const arr = [...country]
 
             if (visitedCountries.includes(countryName)) {
                 console.log("Already visited")
             } else {
-                const country = document.getElementsByClassName(`${countryName}`)
-                const arr = [...country]
                 arr.forEach(item => item.style.fill = "salmon")
             }
             setCurrentCountry(countryName)
@@ -49,13 +50,20 @@ function App() {
             const countryName = event.target.className.baseVal;
             const country = document.getElementsByClassName(`${countryName}`)
             const arr = [...country]
-            arr.forEach(item => item.style.fill = "green")
-            setVisitedCountries(prevState => [countryName, ...prevState])
+            if(visitedCountries.includes(countryName)) {
+                setVisitedCountries(prevState => prevState.filter(item => item !== countryName))
+                arr.forEach(item => item.style.fill = "")
+            } else {
+                arr.forEach(item => item.style.fill = "green")
+                setVisitedCountries(prevState => [...prevState, countryName])
+            }
+
         }
     }
 
   return (
     <div className="App">
+        <NavBar visitedCountries={visitedCountries}/>
         <span className="currentCountry">
             {currentCountry}
         </span>

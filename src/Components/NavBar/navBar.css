@@ -1,0 +1,46 @@
+.navBar {
+    width: 1900px;
+}
+
+.title {
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slideBarOn {
+    width: 200px;
+    border: 2px black solid;
+    height: 1000px;
+    position: absolute;
+    background-color: salmon;
+    transition: 1s;
+    font-size: 16px;
+    display: block;
+}
+
+.slideBarOff {
+    border: 2px black solid;
+    height: 1000px;
+    position: absolute;
+    background-color: salmon;
+    transition: 1s;
+    font-size: 16px;
+    width: 50px;
+    display: block;
+}
+
+.countVisitedCountriesOn {
+    margin-top: 20px;
+}
+
+.percentVisitedCountriesOn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.listVisitedCountries {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
