@@ -8,35 +8,85 @@
     text-align: center;
 }
 
-.slideBarOn {
-    width: 200px;
-    border: 2px black solid;
+.slideBar {
     height: 1000px;
     position: absolute;
-    background-color: salmon;
+    background-color: grey;
     transition: 1s;
     font-size: 16px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.slideBarOff {
-    border: 2px black solid;
-    height: 1000px;
-    position: absolute;
-    background-color: salmon;
-    transition: 1s;
-    font-size: 16px;
-    width: 50px;
-    display: block;
+.slideBar-on {
+    width: 300px;
 }
+
+.slideBar-off {
+    width: 70px;
+}
+
+
+.slideBar_button {
+    margin-top: 10px;
+    font-size: 30px;
+    background: none;
+    border: 2px black solid;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    align-self: flex-end;
+    margin-right: 5px;
+}
+
+.slideBar_button-on {
+    transform: rotate(180deg);
+}
+
+.slideBar_button-off {
+    margin-bottom: 20px;
+}
+
 
 .countVisitedCountriesOn {
-    margin-top: 20px;
+    margin-top: 40px;
+}
+
+.countVisitedCountriesOff {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.numberOfCountries {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .percentVisitedCountriesOn {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.percentVisitedCountriesOff {
+    width: 50px;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
 
 .listVisitedCountries {

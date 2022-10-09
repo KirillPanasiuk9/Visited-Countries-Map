@@ -1,8 +1,9 @@
 import React from 'react';
+import "./countryForSlideBar.css"
 
 const CountryForSlideBar = ({country}) => {
     return (
-        <div>
+        <div className="countryForSlideBar">
             {country}
         </div>
     );

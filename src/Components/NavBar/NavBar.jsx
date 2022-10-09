@@ -14,48 +14,42 @@ const NavBar = ({visitedCountries}) => {
         <div className="navBar">
             {visible === true
             ?
-                <div className="slideBarOn">
+                <div className="slideBar slideBar-on">
                     <button
-                        className="slideBar_button"
+                        className="slideBar_button slideBar_button-on"
                         onClick={slideNavBarAction}
                     >
-                        <svg
-                            fill="#000000"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 50 50"
-                            width="30px"
-                            height="30px">
-                            <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/>
-                        </svg>
+                        {"➤\t"}
                     </button>
                     <div className="countVisitedCountriesOn">
-                        {`You've visited ${visitedCountries.length} countries out of 193`}
+                        {"You've visited "}
+                        <span className="numberOfCountries">
+                            {`${visitedCountries.length}`}
+                        </span>
+                        {" countries out of 193"}
                     </div>
                     <div className="percentVisitedCountriesOn">
-                        {`You've visited ${visitedCountries.length/193*100}% of the World`}
+                        {"You've visited "}
+                        <span className="numberOfCountries">
+                            {`${Math.round(visitedCountries.length/193*100)}%`}
+                        </span>
+                        {" of the World"}
                     </div>
                     <ListVisitedCountries visitedCountries={visitedCountries}/>
                 </div>
             :
-                <div className="slideBarOff">
+                <div className="slideBar slideBar-off">
                     <button
-                        className="slideBar_button"
+                        className="slideBar_button slideBar_button-off"
                         onClick={slideNavBarAction}
                     >
-                        <svg
-                            fill="#000000"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 50 50"
-                            width="30px"
-                            height="30px">
-                            <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/>
-                        </svg>
+                        {"➤\t"}
                     </button>
                     <div className="countVisitedCountriesOff">
                         {`${visitedCountries.length}`}
                     </div>
                     <div className="percentVisitedCountriesOff">
-                        {`${visitedCountries.length/193*100}%`}
+                        {`${Math.round(visitedCountries.length/193*100)}%`}
                     </div>
                 </div>
             }

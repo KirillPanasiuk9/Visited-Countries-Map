@@ -19,7 +19,7 @@ function App() {
             if (visitedCountries.includes(countryName)) {
                 console.log("Already visited")
             } else {
-                arr.forEach(item => item.style.fill = "salmon")
+                arr.forEach(item => item.style.fill = "grey")
             }
             setCurrentCountry(countryName)
         }
@@ -41,8 +41,8 @@ function App() {
 
     const showCountryName = (pageX, pageY) => {
         const label = document.getElementsByClassName("currentCountry")[0]
-        label.style.left = pageX + 10 + 'px'
-        label.style.top = pageY + 10 + 'px'
+        label.style.left = pageX - 10 + 'px'
+        label.style.top = pageY - 30 + 'px'
     }
 
     const visited = (event) => {
@@ -54,7 +54,7 @@ function App() {
                 setVisitedCountries(prevState => prevState.filter(item => item !== countryName))
                 arr.forEach(item => item.style.fill = "")
             } else {
-                arr.forEach(item => item.style.fill = "green")
+                arr.forEach(item => item.style.fill = "#5b7be3")
                 setVisitedCountries(prevState => [...prevState, countryName])
             }
 
