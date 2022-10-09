@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Visited-Countries-Map/static/css/main.57d77b1c.css",
-    "main.js": "/Visited-Countries-Map/static/js/main.45b91443.js",
+    "main.css": "/Visited-Countries-Map/static/css/main.fbb4f0a1.css",
+    "main.js": "/Visited-Countries-Map/static/js/main.0333b104.js",
     "index.html": "/Visited-Countries-Map/index.html",
-    "main.57d77b1c.css.map": "/Visited-Countries-Map/static/css/main.57d77b1c.css.map",
-    "main.45b91443.js.map": "/Visited-Countries-Map/static/js/main.45b91443.js.map"
+    "main.fbb4f0a1.css.map": "/Visited-Countries-Map/static/css/main.fbb4f0a1.css.map",
+    "main.0333b104.js.map": "/Visited-Countries-Map/static/js/main.0333b104.js.map"
   },
   "entrypoints": [
-    "static/css/main.57d77b1c.css",
-    "static/js/main.45b91443.js"
+    "static/css/main.fbb4f0a1.css",
+    "static/js/main.0333b104.js"
   ]
 }
