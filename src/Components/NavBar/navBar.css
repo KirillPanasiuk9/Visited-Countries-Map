@@ -1,16 +1,24 @@
 .navBar {
-    width: 1900px;
+    width: 100%;
+    height: 100px;
+    zoom: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 
 .title {
     font-size: 30px;
     margin: 0 auto;
     text-align: center;
+    height: 50px;
 }
 
+
 .slideBar {
-    height: 1000px;
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
+    zoom: unset;
+    height: 100%;
     background-color: grey;
     transition: 1s;
     font-size: 16px;

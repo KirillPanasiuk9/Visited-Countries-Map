@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import "./navBar.css"
 import ListVisitedCountries from "../CountriesList/ListVisitedCountries";
+import NavBar_Continents from "../NavBar_Continents/NavBar_Continents";
 
-const NavBar = ({visitedCountries}) => {
+const NavBar = ({visitedCountries, zoomContinent}) => {
 
     const [visible, setVisible] = useState(false)
 
@@ -57,6 +58,7 @@ const NavBar = ({visitedCountries}) => {
             <div className="title">
                 {"Visited Countries Map"}
             </div>
+            <NavBar_Continents zoomContinent={zoomContinent}/>
         </div>
     );
 };
