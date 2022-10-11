@@ -1,12 +1,28 @@
 import './App.css';
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import NavBar from "./Components/NavBar/NavBar";
 
-function App() {
 
-    const [visitedCountries, setVisitedCountries] = useState([])
+const getLocalVisitedCountries = () => {
+    const visitedCountries = localStorage.getItem("visitedCountries")
+    return visitedCountries ? JSON.parse(visitedCountries) : []
+}
+
+function App() {
+    const [visitedCountries, setVisitedCountries] = useState(() => getLocalVisitedCountries())
     const [currentCountry, setCurrentCountry] = useState('')
 
+    useEffect(
+        () => {
+            localStorage.setItem("visitedCountries", JSON.stringify(visitedCountries))
+            visitedCountries.forEach(item => {
+                const country = document.getElementsByClassName(item)
+                const arr = [...country]
+                arr.forEach(item => item.style.fill = "#5b7be3")
+            })
+        },
+            [visitedCountries]
+    );
 
 
     const onMouseOver = (event) => {
@@ -60,7 +76,6 @@ function App() {
 
         }
     }
-
 
     const zoomContinent = (continent) => {
         const map = document.getElementsByClassName("map")[0]

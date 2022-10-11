@@ -4,8 +4,10 @@ import CountryForSlideBar from "../CountryForSlideBar/CountryForSlideBar";
 
 const ListVisitedCountries = ({visitedCountries}) => {
     return (
-        <div className="istVisitedCountries">
-            {"Visited Countries:"}
+        <div className="listVisitedCountries">
+            <p>
+                {"Visited Countries:"}
+            </p>
             {visitedCountries.map(item =>
                 <CountryForSlideBar country={item}/>
             )}

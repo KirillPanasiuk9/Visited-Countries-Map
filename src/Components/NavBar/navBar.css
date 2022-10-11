@@ -1,16 +1,18 @@
 .navBar {
     width: 100%;
-    height: 100px;
+    height: 80px;
     zoom: 100%;
     position: fixed;
     z-index: 1000;
+    background-color: #708090;
 }
 
 .title {
     font-size: 30px;
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
     height: 50px;
+    font-weight: bold;
 }
 
 
@@ -19,13 +21,14 @@
     z-index: 1000;
     zoom: unset;
     height: 100%;
-    background-color: grey;
+    background-color: #708098;
     transition: 1s;
     font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    overflow-y: scroll;
 }
 
 .slideBar-on {

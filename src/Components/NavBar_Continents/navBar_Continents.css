@@ -1,14 +1,27 @@
 .navBar_Continents {
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     flex-direction: row;
     font-size: 20px;
+    padding-left: 80px;
 }
 
 .continent {
-    width: calc((1/7) *100%);
+    width: calc((1/7) * 98%);
     border: black solid 2px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+
+.continent:hover {
+    height: 50px;
+    font-weight: bold;
+    background-color: #708098;
 }
