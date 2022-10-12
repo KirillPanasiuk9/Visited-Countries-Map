@@ -37,6 +37,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
 body {
     background-color: #343461;
+    color: #e8e8fc;
 }
 
 .currentCountry {
@@ -49,7 +50,6 @@ body {
 .mapContainer {
     width: 100%;
     overflow: hidden;
-    /*width: 100px;*/
     transform: unset;
 }
 

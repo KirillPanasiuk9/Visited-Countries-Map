@@ -1,10 +1,10 @@
 .navBar {
     width: 100%;
-    height: 80px;
+    height: 70px;
     zoom: 100%;
     position: fixed;
     z-index: 1000;
-    background-color: #708090;
+    background-color: #1e1e38;
 }
 
 .title {
@@ -21,7 +21,7 @@
     z-index: 1000;
     zoom: unset;
     height: 100%;
-    background-color: #708098;
+    background-color: #1e1e38;
     transition: 1s;
     font-size: 16px;
     display: flex;
@@ -44,13 +44,14 @@
     margin-top: 10px;
     font-size: 30px;
     background: none;
-    border: 2px black solid;
+    border: 2px #e8e8fc solid;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     transition: 1s;
     align-self: flex-end;
     margin-right: 5px;
+    color: #e8e8fc;
 }
 
 .slideBar_button-on {
@@ -70,7 +71,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px black solid;
+    border: 1px #e8e8fc solid;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,7 +93,7 @@
 .percentVisitedCountriesOff {
     width: 50px;
     height: 50px;
-    border: 1px black solid;
+    border: 1px #e8e8fc solid;
     border-radius: 50%;
     display: flex;
     align-items: center;

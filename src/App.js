@@ -85,28 +85,28 @@ function App() {
             map.style.left = "0px"
         } else if (continent === "North America") {
             map.style.transform = "scale(2.5)"
-            map.style.top = "200px"
-            map.style.left = "800px"
+            map.style.top = "22%"
+            map.style.left = "55%"
         } else if (continent === "South America") {
             map.style.transform = "scale(2)"
-            map.style.top = "-400px"
-            map.style.left = "500px"
+            map.style.top = "-44%"
+            map.style.left = "35%"
         } else if (continent === "Europe") {
             map.style.transform = "scale(4)"
-            map.style.top = "600px"
+            map.style.top = "77%"
             map.style.left = "0px"
         } else if (continent === "Asia") {
             map.style.transform = "scale(3)"
-            map.style.top = "200px"
-            map.style.left = "-1100px"
+            map.style.top = "22%"
+            map.style.left = "-76%"
         } else if (continent === "Africa") {
             map.style.transform = "scale(2)"
-            map.style.top = "-150px"
-            map.style.left = "000px"
+            map.style.top = "-17%"
+            map.style.left = "0px"
         } else if (continent === "Oceania") {
             map.style.transform = "scale(2.2)"
-            map.style.top = "-300px"
-            map.style.left = "-1000px"
+            map.style.top = "-43%"
+            map.style.left = "-69%"
         }
     }
 
